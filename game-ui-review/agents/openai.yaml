@@ -1,0 +1,7 @@
+interface:
+  display_name: "Game UI Review"
+  short_description: "游戏 UI 截图的专业视觉评审与风险定位"
+  default_prompt: "Use $game-ui-review to review this game UI screenshot and produce a structured design risk report."
+
+policy:
+  allow_implicit_invocation: true
