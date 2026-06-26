@@ -1,0 +1,226 @@
+<!doctype html>
+<!-- site-version: dark-hud-2026-06-26 -->
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>game-ui-review · Game UI Review Skill</title>
+    <meta
+      name="description"
+      content="game-ui-review 是面向游戏 UI 团队的 Codex Skill，用于完整游戏 UI 截图的 AI 专业评审。"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23091513'/><text x='50' y='68' font-size='52' font-family='Georgia' font-weight='700' fill='%235eead4' text-anchor='middle'>UI</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-grain" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="game-ui-review home">
+          <span class="brand-mark">UI</span>
+          <span class="brand-name">game-ui-review</span>
+          <span class="brand-tag">v1</span>
+        </a>
+        <div class="nav-actions">
+          <a href="#install">安装</a>
+          <a href="#output">输出</a>
+          <a
+            class="nav-cta"
+            href="https://github.com/Duck-Claw/Game-UI-Review"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub ↗</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- ===================== HERO ===================== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="dot"></span>Codex Skill · Game UI Teams</p>
+            <h1 id="hero-title">
+              游戏 UI 截图的<br />
+              <em>AI 专业评审</em> Skill
+            </h1>
+            <p class="lead">
+              上传完整游戏 UI 截图，获得设计 Leader 视角的视觉评审、市场适配判断、多语言风险与
+              Unity 落地建议。
+            </p>
+            <div class="cta-row">
+              <a
+                class="button primary"
+                href="https://github.com/Duck-Claw/Game-UI-Review"
+                target="_blank"
+                rel="noreferrer"
+              >
+                查看 GitHub<span class="arrow">→</span>
+              </a>
+              <a
+                class="button ghost"
+                href="https://github.com/Duck-Claw/Game-UI-Review/archive/refs/heads/main.zip"
+              >
+                下载 ZIP
+              </a>
+            </div>
+            <dl class="quick-stats" aria-label="skill highlights">
+              <div><dt>评分维度</dt><dd><strong>8</strong></dd></div>
+              <div><dt>外部 API</dt><dd><strong>0</strong></dd></div>
+              <div><dt>默认输出</dt><dd><strong>中文</strong></dd></div>
+            </dl>
+          </div>
+
+          <figure class="scanner reveal" aria-label="game-ui-review preview">
+            <div class="scanner-frame">
+              <i class="bracket tl"></i><i class="bracket tr"></i>
+              <i class="bracket bl"></i><i class="bracket br"></i>
+              <div class="scanline" aria-hidden="true"></div>
+              <img
+                src="./assets/game-ui-review-intro.png"
+                alt="game-ui-review skill 介绍图"
+                loading="eager"
+              />
+              <span class="hud-chip top">ANALYZING · 截图</span>
+              <span class="hud-chip bottom">8 / 8 维度</span>
+            </div>
+            <figcaption>实时诊断视图 · diagnostic viewport</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===================== CAPABILITY ===================== -->
+      <section class="capability" aria-labelledby="capability-title">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="dot"></span>Review Coverage</p>
+          <h2 id="capability-title">一次评审，覆盖关键风险</h2>
+        </div>
+        <div class="capability-grid">
+          <article class="reveal">
+            <span class="idx">01</span>
+            <h3>层级与可读性</h3>
+            <p>判断主行动、重点信息、小字、数值和复杂背景上的阅读压力。</p>
+          </article>
+          <article class="reveal">
+            <span class="idx">02</span>
+            <h3>市场适配</h3>
+            <p>针对欧美、日韩、东南亚与全球市场识别风格、密度和转化表达风险。</p>
+          </article>
+          <article class="reveal">
+            <span class="idx">03</span>
+            <h3>一致性检查</h3>
+            <p>检查按钮、图标、材质、描边、阴影、发光和组件化规则。</p>
+          </article>
+          <article class="reveal">
+            <span class="idx">04</span>
+            <h3>落地风险</h3>
+            <p>从 Unity 还原、切图、混合模式、安全区、多比例和多语言空间评估实现成本。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===================== STRUCTURED OUTPUT ===================== -->
+      <section class="output" id="output" aria-labelledby="score-title">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span class="dot"></span>Structured Output</p>
+          <h2 id="score-title">结构化输出，不只“感觉不错”</h2>
+        </div>
+        <div class="score-layout">
+          <div class="score-card reveal">
+            <div class="card-top">
+              <span class="card-label">SCORECARD</span>
+              <span class="card-note">示例输出 · sample readout</span>
+            </div>
+            <ul class="meters">
+              <li class="meter" style="--val: 82"><span class="m-name">层级清晰度</span><span class="m-track good"><i></i></span><span class="m-num" data-to="82">0</span></li>
+              <li class="meter" style="--val: 88"><span class="m-name">一致性</span><span class="m-track good"><i></i></span><span class="m-num" data-to="88">0</span></li>
+              <li class="meter" style="--val: 76"><span class="m-name">可读性</span><span class="m-track warn"><i></i></span><span class="m-num" data-to="76">0</span></li>
+              <li class="meter" style="--val: 71"><span class="m-name">信息密度</span><span class="m-track warn"><i></i></span><span class="m-num" data-to="71">0</span></li>
+              <li class="meter" style="--val: 84"><span class="m-name">主行动清晰度</span><span class="m-track good"><i></i></span><span class="m-num" data-to="84">0</span></li>
+              <li class="meter" style="--val: 79"><span class="m-name">目标市场适配度</span><span class="m-track warn"><i></i></span><span class="m-num" data-to="79">0</span></li>
+              <li class="meter" style="--val: 86"><span class="m-name">风格成熟度</span><span class="m-track good"><i></i></span><span class="m-num" data-to="86">0</span></li>
+              <li class="meter" style="--val: 64"><span class="m-name">落地风险</span><span class="m-track risk"><i></i></span><span class="m-num" data-to="64">0</span></li>
+            </ul>
+            <p class="scale-note">每个维度按 <code>0–100</code> 打分 · 颜色提示风险等级</p>
+          </div>
+
+          <ol class="report-flow reveal" aria-label="report structure">
+            <li><span class="step">1</span><div><h4>总体结论</h4><p>一句话定调，先说能不能上。</p></div></li>
+            <li><span class="step">2</span><div><h4>评分卡</h4><p>8 个维度量化打分。</p></div></li>
+            <li><span class="step">3</span><div><h4>高优先级问题</h4><p>按严重度排序的必改项。</p></div></li>
+            <li><span class="step">4</span><div><h4>市场 / 多语言 / 一致性 / 工程风险</h4><p>分类拆解可执行建议。</p></div></li>
+            <li><span class="step">5</span><div><h4>Design Leader 总结</h4><p>站在团队视角的取舍判断。</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===================== INSTALL ===================== -->
+      <section class="install" id="install" aria-labelledby="install-title">
+        <div class="install-copy reveal">
+          <p class="eyebrow"><span class="dot"></span>Install</p>
+          <h2 id="install-title">下载后放入 Codex Skills 目录</h2>
+          <p>
+            Skill 文件夹名是 <code>game-ui-review</code>。安装后重启 Codex，即可使用
+            <code>$game-ui-review</code> 调用。
+          </p>
+        </div>
+        <div class="terminal reveal" role="img" aria-label="installation commands">
+          <div class="terminal-bar">
+            <span class="tb-dot"></span><span class="tb-dot"></span><span class="tb-dot"></span>
+            <span class="tb-title">bash — install</span>
+          </div>
+          <pre><code><span class="c-c">mkdir</span> -p ~/.codex/skills
+<span class="c-c">cp</span> -R game-ui-review ~/.codex/skills/game-ui-review
+
+<span class="c-d"># 重启 Codex 后调用：</span>
+<span class="c-p">$game-ui-review</span> <span class="c-s">欧美 SLG 活动页，上线前检查。</span></code></pre>
+        </div>
+      </section>
+
+      <!-- ===================== DOWNLOAD ===================== -->
+      <section class="download" aria-label="download links">
+        <div class="download-panel reveal">
+          <div class="download-copy">
+            <p class="eyebrow"><span class="dot"></span>Download</p>
+            <h2>GitHub 仓库已准备好</h2>
+            <p>包含 README、介绍图、SKILL.md、openai.yaml 和评审 Rubric，可直接分享给团队成员。</p>
+          </div>
+          <div class="download-actions">
+            <a
+              class="button primary"
+              href="https://github.com/Duck-Claw/Game-UI-Review"
+              target="_blank"
+              rel="noreferrer"
+            >
+              打开 GitHub<span class="arrow">→</span>
+            </a>
+            <a
+              class="button ghost"
+              href="https://github.com/Duck-Claw/Game-UI-Review/archive/refs/heads/main.zip"
+            >
+              下载仓库 ZIP
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>game-ui-review</span>
+      <span>面向 UI 设计师 / Design Leader / UX 负责人</span>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
