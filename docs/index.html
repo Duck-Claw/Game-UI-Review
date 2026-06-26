@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>game-ui-review | Game UI Review Skill</title>
+    <meta
+      name="description"
+      content="game-ui-review 是面向游戏 UI 团队的 Codex Skill，用于完整游戏 UI 截图的 AI 专业评审。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="nav">
+          <a class="brand" href="#top" aria-label="game-ui-review home">
+            <span class="brand-mark">UI</span>
+            <span>game-ui-review</span>
+          </a>
+          <div class="nav-actions">
+            <a href="#install">安装</a>
+            <a href="https://github.com/Duck-Claw/Game-UI-Review" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-grid" id="top">
+          <div class="hero-copy">
+            <p class="eyebrow">Codex Skill for Game UI Teams</p>
+            <h1 id="hero-title">游戏 UI 截图的<br />AI 专业评审 Skill</h1>
+            <p class="lead">
+              上传完整游戏 UI 截图，获得设计 Leader 视角的视觉评审、市场适配判断、多语言风险与 Unity 落地建议。
+            </p>
+            <div class="cta-row">
+              <a class="button primary" href="https://github.com/Duck-Claw/Game-UI-Review" target="_blank" rel="noreferrer">
+                查看 GitHub
+              </a>
+              <a class="button secondary" href="https://github.com/Duck-Claw/Game-UI-Review/archive/refs/heads/main.zip">
+                下载 ZIP
+              </a>
+            </div>
+            <div class="quick-stats" aria-label="skill highlights">
+              <span><strong>8</strong> 个评分维度</span>
+              <span><strong>0</strong> 外部 API</span>
+              <span><strong>中文</strong> 默认输出</span>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-label="game-ui-review preview">
+            <img src="./assets/game-ui-review-intro.png" alt="game-ui-review skill introduction" />
+          </div>
+        </div>
+      </section>
+
+      <section class="capability-band" aria-labelledby="capability-title">
+        <div class="section-head">
+          <p class="eyebrow">Review Coverage</p>
+          <h2 id="capability-title">一次评审覆盖关键风险</h2>
+        </div>
+        <div class="capability-grid">
+          <article>
+            <span class="icon">01</span>
+            <h3>层级与可读性</h3>
+            <p>判断主行动、重点信息、小字、数值和复杂背景上的阅读压力。</p>
+          </article>
+          <article>
+            <span class="icon">02</span>
+            <h3>市场适配</h3>
+            <p>针对欧美、日韩、东南亚与全球市场识别风格、密度和转化表达风险。</p>
+          </article>
+          <article>
+            <span class="icon">03</span>
+            <h3>一致性检查</h3>
+            <p>检查按钮、图标、材质、描边、阴影、发光和组件化规则。</p>
+          </article>
+          <article>
+            <span class="icon">04</span>
+            <h3>落地风险</h3>
+            <p>从 Unity 还原、切图、混合模式、安全区、多比例和多语言空间评估实现成本。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="score-section" aria-labelledby="score-title">
+        <div class="section-head">
+          <p class="eyebrow">Structured Output</p>
+          <h2 id="score-title">结构化输出，不只“感觉不错”</h2>
+        </div>
+        <div class="score-layout">
+          <div class="score-card">
+            <div class="score-row"><span>层级清晰度</span><strong>0-100</strong></div>
+            <div class="score-row"><span>一致性</span><strong>0-100</strong></div>
+            <div class="score-row"><span>可读性</span><strong>0-100</strong></div>
+            <div class="score-row"><span>信息密度</span><strong>0-100</strong></div>
+            <div class="score-row"><span>主行动清晰度</span><strong>0-100</strong></div>
+            <div class="score-row"><span>目标市场适配度</span><strong>0-100</strong></div>
+            <div class="score-row"><span>风格成熟度</span><strong>0-100</strong></div>
+            <div class="score-row"><span>落地风险</span><strong>0-100</strong></div>
+          </div>
+          <div class="report-flow">
+            <div>
+              <span>1</span>
+              <p>总体结论</p>
+            </div>
+            <div>
+              <span>2</span>
+              <p>评分卡</p>
+            </div>
+            <div>
+              <span>3</span>
+              <p>高优先级问题</p>
+            </div>
+            <div>
+              <span>4</span>
+              <p>市场 / 多语言 / 一致性 / 工程风险</p>
+            </div>
+            <div>
+              <span>5</span>
+              <p>Design Leader 总结</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="install" id="install" aria-labelledby="install-title">
+        <div class="install-copy">
+          <p class="eyebrow">Install</p>
+          <h2 id="install-title">下载后放入 Codex Skills 目录</h2>
+          <p>
+            Skill 文件夹名是 <code>game-ui-review</code>。安装后重启 Codex，即可使用 <code>$game-ui-review</code> 调用。
+          </p>
+        </div>
+        <div class="terminal" role="img" aria-label="installation commands">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+          </div>
+          <pre><code>mkdir -p ~/.codex/skills
+cp -R game-ui-review ~/.codex/skills/game-ui-review
+
+# Restart Codex, then invoke:
+$game-ui-review 欧美 SLG 活动页，上线前检查。</code></pre>
+        </div>
+      </section>
+
+      <section class="download-panel" aria-label="download links">
+        <div>
+          <p class="eyebrow">Download</p>
+          <h2>GitHub 仓库已准备好</h2>
+          <p>包含 README、介绍图、SKILL.md、openai.yaml 和评审 Rubric，可直接分享给团队成员。</p>
+        </div>
+        <div class="download-actions">
+          <a class="button primary" href="https://github.com/Duck-Claw/Game-UI-Review" target="_blank" rel="noreferrer">
+            打开 GitHub
+          </a>
+          <a class="button dark" href="https://github.com/Duck-Claw/Game-UI-Review/archive/refs/heads/main.zip">
+            下载仓库 ZIP
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
